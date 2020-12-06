@@ -1,0 +1,46 @@
+// .body {
+.aboutBody {
+  //background-color: $primary-color;
+  //background-image: linear-gradient(to right, #434343, rgb(26, 23, 23));
+  background-image: linear-gradient(to right, rgb(1, 67, 51), #3a094b);
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding-top: 20%;
+
+  .me {
+    width: 55%;
+
+    opacity: 0.5;
+    // margin: 5%;
+  }
+  .profile {
+    text-align: center;
+    width: 350px;
+    margin: 0px;
+    padding-left: 3%;
+
+    h2 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 100;
+      color: #bbb389;
+      margin: 0px;
+      text-align: left;
+      font-size: 1.2em;
+      padding-top: 20px;
+    }
+    p {
+      width: 350px;
+      font-family: 'Roboto', sans-serif;
+      color: #faefb6;
+      font-weight: 100;
+      margin: 0px;
+      text-align: left;
+      font-size: 1em;
+    }
+  }
+}
+
+// }

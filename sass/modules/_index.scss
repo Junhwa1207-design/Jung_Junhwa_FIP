@@ -1,0 +1,116 @@
+// .body {
+//   margin: 0px;
+//   width: 100%;
+//   background-image: linear-gradient(to right, rgb(1, 67, 51), #3a094b);
+//   flex-wrap: wrap;
+//   flex-direction: row;
+//   display: flex;
+#app {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.hero {
+  //padding-top: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  //margin-top: 10%;
+
+  .cat {
+    margin: 0px;
+    width: 40%;
+  }
+
+  .intro {
+    padding-top: 10%;
+    margin: 0px;
+    width: 50%;
+    //height: 400px;
+
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 100;
+      font-size: 1.8em;
+      color: pink;
+      text-align: center;
+    }
+    h2 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 100;
+      font-size: 1.3em;
+      color: pink;
+      text-align: center;
+      padding-top: 0px;
+    }
+
+    .box {
+      margin-left: 10%;
+
+      width: 35px;
+      height: 20px;
+      background-color: rgba(255, 217, 0, 0.342);
+      border: 3px solid rgba(255, 217, 0, 0.39);
+      transition-property: all;
+      animation-name: shape;
+      animation-duration: 2s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+    }
+    @keyframes shape {
+      from {
+        border: 1px solid rgba(112, 101, 46, 0.767);
+        background-color: rgba(255, 217, 0, 0.342);
+      }
+      to {
+        width: 200px;
+        height: 200px;
+        border: 5px solid rgba(126, 82, 113, 0.527);
+        background-color: solid rgba(136, 58, 113, 0.527);
+        border-radius: 50%;
+      }
+    }
+    .box2 {
+      margin-left: 40%;
+      width: 80px;
+      height: 100px;
+      background-color: rgba(245, 244, 238, 0.719);
+      border: 3px solid rgba(255, 217, 0, 0.39);
+      transition-property: all;
+      animation-name: shape;
+      animation-duration: 2s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+    }
+    @keyframes shape {
+      from {
+        border: 1px solid rgba(232, 225, 193, 0.884);
+        background-color: r gba(247, 243, 220, 0.94);
+      }
+      to {
+        width: 30px;
+        height: 30px;
+        border: 5px solid rgba(126, 82, 113, 0.527);
+        background-color: solid rgba(126, 182, 235, 0.527);
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.video {
+  margin: 0px;
+  width: 100%;
+
+  //height: 200px;
+}
+
+// p {
+//   color: white;
+//   background-color: rgba(9, 9, 9, 0.534);
+//   padding: 200px 200px 200px 200px;
+//   margin-bottom: 200px;
+// }
+
+// }
