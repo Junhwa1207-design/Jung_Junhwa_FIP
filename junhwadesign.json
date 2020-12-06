@@ -1,0 +1,16 @@
+[
+{"type":"header","version":"4.9.4","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"junhwadesign"},
+{"type":"table","name":"portfolio","database":"junhwadesign","data":
+[
+{"id":"1","name":"Hero Poster","image":"hero.jpg","source":"hero.jpg","description":"","mediatype":"Graphic"},
+{"id":"2","name":"Label Design","image":"sauce.jpg","source":"neonwall.jpg\r\n\r\n","description":"","mediatype":"Graphic"},
+{"id":"3","name":"Magazine Design","image":"magazine.jpg","source":"magazine.jpg","description":"","mediatype":"Graphic"},
+{"id":"4","name":"Brand design","image":"ceci.jpg","source":"dolcetto.jpg","description":"","mediatype":"Graphic"},
+{"id":"5","name":"Pass card Design","image":"passCard.jpg","source":"passCard.jpg","description":"","mediatype":"Graphic"},
+{"id":"6","name":"Package Design","image":"coffeeBean.jpg","source":"coffeeBean.jpg","description":"","mediatype":"Graphic"},
+{"id":"7","name":"Typography Design","image":"TypoFlower.jpg","source":"TypoFlower.jpg","description":"","mediatype":"Graphic"},
+{"id":"8","name":"Movie poster","image":"Poster.jpg","source":"Poster.jpg","description":"","mediatype":"Graphic"}
+]
+}
+]
