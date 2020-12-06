@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juna's Portfolio_gallery</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,900;1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+    <div class="body">
+        <div class="header">
+            <section class="logo">
+                <img src="images/logo.svg" alt=""">  
+              </section>
+               
+                    <div class="mainNav">  
+        
+                      <input type="checkbox" class="toggle-menu">
+                      <div class="hamburger"></div>
+        
+                    <ul class="main-nav">
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a class="active" href="gallery.html">Gallery</a></li>
+                        <li><a class="active" href="about.html">About</a></li>
+                        <li><a class="active" href="contact.html">Contact</a></li>
+                    </ul>
+                    
+                </div>
+        </div>
+
+        
+    <main id="app"> 
+                      
+<ul class="work">
+    <portfolio-card @showmydata="showPortfolioData" v-for="work in portfolio" :folio="work" :key="work.id">
+        
+    </portfolio-card>
+   
+    
+    <section class="bio-data" :class="{'show-bio' : showBioData}">
+        <h1>{{ currentPortfolioData.name}}</h1>
+       <p>{{currentPortfolioData.image2}}</p>
+    </section>
+
+</ul>
+
+
+    <!--<section class="galleryBody">
+<section class="works">
+        <div class="work1"><img src="images/nightOwl.jpg" alt="" width="350" height="420"><p>Night Owl, 2018</p></div>
+        <div class="work2"><img src="images/osaka.jpg" alt=""><p>Typography Design,2017</p></div>
+        <div class="work3"><img src="images/Character.jpg" alt=""><p>Character Design,2019</p> <p class="moreInfo">More Info</p></div>
+        <div class="work4"><img src="images/Poster.jpg" alt=""> <p>Movie Poster,2018</p></div> 
+    <div class="work5"><img src="images/passCard.jpg" alt=""> <p>Pass Card,2019 </p></div>
+    <div class="work6"><img src="images/TypoFlower.jpg" alt=""> <p>Typo Creation,2017</p></div>  
+    <div class="work7"><img src="images/sauce.jpg" alt=""> <p>Label Design</p></div>
+    <div class="work8"><img src="images/magazine.jpg" alt=""> <p>Magazine,2020-</p></div>
+    <div class="work9"><img src="images/hero.jpg" alt=""> <p>Photoshop Manupulation_hero,2019</p></div>
+    <div class="work10"><img src="images/coffeeBean.jpg" alt=""> <p>Package Design,2017</p></div>
+    <div class="work11"><img src="images/dolcetto.jpg" alt=""> <p>Branding_Dolcetto, 2018</p></div>
+    <div class="work12"> <img src="images/beer.jpg" alt=""><p>logo & label Design, 2018</p></div> 
+</section>
+ </section>-->
+
+
+    <section class="footer">
+        <ul>
+        <li> <a href="#"><i class="fab fa-linkedin-in"></i></a></li> 
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="far fa-envelope"></i></a></li>
+        </ul>
+        <div class="copyRight">
+            <p>&copy;copyright 2020 JunaJung All Rights Reserved.</p>
+            </div>
+      </section>
+    </main> 
+    </div>
+      
+    <script type="module" src="js/main.js" ></script>  
+</body> 
+</html>
