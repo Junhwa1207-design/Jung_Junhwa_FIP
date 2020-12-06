@@ -1,0 +1,526 @@
+@media screen and (min-width: 375px) {
+  .works {
+    width: 100%;
+  }
+  .works img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .body {
+    margin: 0px;
+    width: 100%;
+  }
+  .body .header {
+    width: 100%;
+    margin-left: 0;
+  }
+  .body .header .mainNav {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    width: 70%;
+    height: 17%;
+    background-color: transparent;
+  }
+  .body .header .mainNav .hamburger,
+.body .header .mainNav .toggle-menu {
+    display: none;
+  }
+  .body .header .mainNav .main-nav {
+    margin-left: 0;
+    width: 60%;
+    padding: 0px;
+    margin-top: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: 0.5s;
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 5%;
+  }
+  .body .header .mainNav .main-nav .logo {
+    margin-top: 10%;
+  }
+  .body .works {
+    width: 100%;
+  }
+  .body .works img {
+    width: 40%;
+    height: 40%;
+    margin-top: 200px;
+  }
+  .body .footer ul {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .body {
+    margin: 0px;
+    width: 100%;
+  }
+  .body .works {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .body .works img {
+    width: 50%;
+    height: 50%;
+    margin-top: 200px;
+  }
+  .body .header {
+    width: 100%;
+  }
+  .body .header .mainNav {
+    width: 70%;
+  }
+  .body .header .mainNav .main-nav {
+    margin-left: 0;
+  }
+  .body .header .mainNav .main-nav .logo {
+    margin-top: 10%;
+  }
+}
+.header {
+  background-image: linear-gradient(to right, #014333, #3a094b);
+  margin: 0%;
+  padding: 0%;
+  flex-direction: row;
+  display: flex;
+  height: 120px;
+  width: 100%;
+  position: relative;
+  transition: 0.3s;
+  justify-content: space-between;
+}
+.header .logo {
+  width: 12%;
+  margin-left: 30px;
+  margin-top: 5%;
+  display: block;
+}
+.header .mainNav {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+}
+.header .mainNav .hamburger {
+  position: relative;
+  width: 12px;
+  height: 4px;
+  background: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 2;
+  transition: 0.2s;
+}
+.header .mainNav .hamburger:before,
+.header .mainNav .hamburger:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  right: 0;
+  background: #fff;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+.header .mainNav .hamburger:before {
+  top: -10px;
+  width: 20px;
+}
+.header .mainNav .hamburger:after {
+  top: 10px;
+  width: 25px;
+}
+.header .mainNav .toggle-menu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  cursor: pointer;
+  opacity: 0;
+}
+.header .mainNav .hamburger,
+.header .mainNav .toggle-menu {
+  display: none;
+}
+.header .mainNav .mainNav input:checked ~ .hamburger {
+  background: transparent;
+}
+.header .mainNav .mainNav input:checked ~ .hamburger:before {
+  top: 0;
+  transform: rotate(-45deg);
+  width: 12px;
+}
+.header .mainNav .mainNav input:checked ~ .hamburger:after {
+  top: 0;
+  transform: rotate(45deg);
+  width: 12px;
+}
+.header .mainNav .main-nav {
+  width: 60%;
+  padding: 0px;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  transition: 0.5s;
+  text-decoration: none;
+  list-style-type: none;
+  padding-left: 5%;
+}
+.header .mainNav .main-nav li {
+  text-decoration: none;
+  list-style-type: none;
+  padding-left: 5%;
+}
+.header .mainNav .main-nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  transition: 0.3s;
+}
+.header .mainNav .main-nav a:hover {
+  box-shadow: 0 -5px 0px #fff inset, 500px 0 0 rgba(255, 255, 255, 0.03) inset;
+  padding: 35px 25px 45px 25px;
+}
+
+#app {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.hero .cat {
+  margin: 0px;
+  width: 40%;
+}
+.hero .intro {
+  padding-top: 10%;
+  margin: 0px;
+  width: 50%;
+}
+.hero .intro h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 1.8em;
+  color: pink;
+  text-align: center;
+}
+.hero .intro h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 1.3em;
+  color: pink;
+  text-align: center;
+  padding-top: 0px;
+}
+.hero .intro .box {
+  margin-left: 10%;
+  width: 35px;
+  height: 20px;
+  background-color: rgba(255, 217, 0, 0.342);
+  border: 3px solid rgba(255, 217, 0, 0.39);
+  transition-property: all;
+  animation-name: shape;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes shape {
+  from {
+    border: 1px solid rgba(112, 101, 46, 0.767);
+    background-color: rgba(255, 217, 0, 0.342);
+  }
+  to {
+    width: 200px;
+    height: 200px;
+    border: 5px solid rgba(126, 82, 113, 0.527);
+    background-color: solid rgba(136, 58, 113, 0.527);
+    border-radius: 50%;
+  }
+}
+.hero .intro .box2 {
+  margin-left: 40%;
+  width: 80px;
+  height: 100px;
+  background-color: rgba(245, 244, 238, 0.719);
+  border: 3px solid rgba(255, 217, 0, 0.39);
+  transition-property: all;
+  animation-name: shape;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes shape {
+  from {
+    border: 1px solid rgba(232, 225, 193, 0.884);
+    background-color: r gba(247, 243, 220, 0.94);
+  }
+  to {
+    width: 30px;
+    height: 30px;
+    border: 5px solid rgba(126, 82, 113, 0.527);
+    background-color: solid rgba(126, 182, 235, 0.527);
+    border-radius: 50%;
+  }
+}
+
+.video {
+  margin: 0px;
+  width: 100%;
+}
+
+.body {
+  margin: 0px;
+  width: 100%;
+  background-image: linear-gradient(to right, #014333, #3a094b);
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+}
+.body #app {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.body .work {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0px;
+  margin-top: 10%;
+}
+.body .work li {
+  list-style-type: none;
+}
+.body .work li p {
+  text-align: center;
+  width: 100%;
+  margin-right: opx;
+}
+.body .work li .remove-folio {
+  color: white;
+  width: 70px;
+  height: 20px;
+  padding: 10px 50px 10px 50px;
+  background-color: rgba(235, 233, 233, 0.735);
+  border-radius: 20px;
+  font-family: "Roboto", sans-serif;
+  margin-left: 100px;
+  margin-top: 50px;
+  text-decoration: none;
+  text-align: center;
+}
+.body .work li .remove-folio:hover {
+  background-color: #ff1b1b;
+}
+.body .work img {
+  margin-top: 100px;
+}
+.body .work p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding-left: 50px;
+}
+.body .work .show-bio {
+  display: block !important;
+}
+.body .work .bio-data {
+  width: 100%;
+  height: 100%;
+  margin-top: -3000px;
+  background-color: black;
+}
+.body .work .bio-data h1 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.body .work .bio-data p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.aboutBody {
+  background-image: linear-gradient(to right, #014333, #3a094b);
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding-top: 20%;
+}
+.aboutBody .me {
+  width: 55%;
+  opacity: 0.5;
+}
+.aboutBody .profile {
+  text-align: center;
+  width: 350px;
+  margin: 0px;
+  padding-left: 3%;
+}
+.aboutBody .profile h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: #bbb389;
+  margin: 0px;
+  text-align: left;
+  font-size: 1.2em;
+  padding-top: 20px;
+}
+.aboutBody .profile p {
+  width: 350px;
+  font-family: "Roboto", sans-serif;
+  color: #faefb6;
+  font-weight: 100;
+  margin: 0px;
+  text-align: left;
+  font-size: 1em;
+}
+
+label {
+  text-align: center;
+  display: block;
+  margin: 1.5em 0 0.3em;
+  color: white;
+  padding-left: 0.4em;
+  font-family: "Roboto", sans-serif;
+}
+label:first-of-type {
+  margin-top: 0;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  padding: 0.6em;
+  color: #333;
+  border-radius: 4px;
+  width: 250px;
+}
+
+textarea {
+  resize: none;
+  display: block;
+}
+
+.submit-wrapper {
+  text-align: center;
+  display: inline-block;
+  margin-top: 2em;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #78abeb;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.submit-wrapper:hover {
+  background-color: #5588c8;
+}
+.submit-wrapper span {
+  padding-right: 0.5em;
+}
+
+main {
+  background-image: linear-gradient(to right, #014333, #3a094b);
+  padding: 20px;
+}
+main form {
+  text-align: center;
+  float: center;
+}
+main #message {
+  width: 30%;
+  margin-left: 35%;
+}
+main h2 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 0px;
+  padding-top: 15%;
+  padding-bottom: 7%;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+main hr {
+  width: 80%;
+  border: 1px solid white;
+  margin: 40px 0;
+  text-align: center;
+}
+main p {
+  max-width: 75%;
+  color: white;
+  text-align: center;
+}
+
+.footer {
+  background-image: linear-gradient(to right, #014333, #3a094b);
+  margin: 0px;
+  height: 300px;
+  width: 100%;
+  padding-top: 15%;
+}
+.footer ul {
+  flex-direction: row;
+  display: flex;
+  text-decoration: none;
+  justify-content: space-around;
+  margin: 0px;
+}
+.footer li {
+  text-decoration: none;
+  list-style: none;
+  margin: 0px;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+.footer .copyRight {
+  margin-right: 0px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.footer .copyRight p {
+  text-align: left;
+  width: 100%;
+  margin-left: 2%;
+  padding-top: 5%;
+  font-size: 0.8em;
+}
+
+/*# sourceMappingURL=master.css.map */
